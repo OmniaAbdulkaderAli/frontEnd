@@ -1,0 +1,51 @@
+
+
+
+<div class="container py-5">
+
+    <div class="row">
+
+        <div class="col-md-4">
+            <div>
+                <div class="brd w-25 mb-3"></div>
+                <h1>Trending <br> movies <br> to watch now</h1>
+                <div class="brd w-75 mt-3"></div>
+            </div>
+        </div>
+
+        <!-- 1234 -->
+        <div *ngFor="let movie of homeMovies" class="col-md-2">
+            <div [routerLink]="['/movieDetails' , movie.id ]">
+                <img [src]="imgPath+movie.poster_path" class="img-fluid">
+                <h2>{{movie.title}}</h2>
+            </div>
+        </div>
+
+
+    </div>
+
+    <br><br>
+
+    <div class="row">
+
+        <div class="col-md-4">
+            <div>
+                <div class="brd w-25 mb-3"></div>
+                <h1>Trending <br> Tvs <br> to watch now</h1>
+                <div class="brd w-75 mt-3"></div>
+            </div>
+        </div>
+
+        <div *ngFor="let movie of homeTv" class="col-md-2">
+            <div>
+                <img [src]="imgPath+movie.poster_path" class="img-fluid">
+                <h2>{{movie.name}}</h2>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+</div>

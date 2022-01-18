@@ -1,0 +1,266 @@
+:root {
+  --main-color: #005779
+}
+
+h2 {
+  text-transform: capitalize;
+  color: #707070;
+}
+
+.right {
+  background-color: var(--main-color);
+}
+
+nav ul li a {
+  padding: 10px 10px;
+  font-size: .7rem;
+  color: #999;
+  border-radius: 20px
+}
+
+nav ul li a:hover {
+  background-color: #005779;
+  color: #fff;
+  transition: all 0.7s ease;
+}
+
+header a {
+  max-width: 8%;
+}
+
+header .fonts {
+  font-size: .6rem;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+nav ul li {
+  margin-right: 2rem;
+}
+
+.right .box {
+  background-color: #ffffff52;
+  width: 15rem;
+  height: 9rem;
+  border-radius: 10px;
+  color: tomato;
+}
+
+.btWhatsapp {
+  background-color: #E3F1DE;
+}
+
+.btmobile {
+  background-color: #7070704f;
+}
+
+.left i {
+  margin-right: 10px;
+}
+
+.left button:nth-of-type(1) i {
+  color: green;
+}
+
+
+/* ///////////////////////////////////////////////////// */
+
+/* Registration pade */
+.registration .form-control {
+  border: none;
+  padding: 12px
+}
+
+.registration .row {
+  color: #707070;
+}
+
+.registration input,
+.registration .form-select {
+  background-color: #F2F2F2;
+  border: none;
+  color: #707070;
+  padding: 12px;
+}
+
+.registration button {
+  background-color: #005779;
+}
+
+/* ///////////////////////////////////////////////////// */
+
+
+
+.controlPanel path {
+  fill: #1982af46
+}
+
+.controlPanel g rect:nth-of-type(2) {
+  display: none;
+}
+
+.controlPanel .product {
+  max-width: 2.5rem;
+  max-height: 2.5rem;
+  margin-right: 5px;
+}
+
+.controlPanel button {
+  background-color: #005779;
+  color: #fff;
+}
+
+.controlPanel .boxsGreen {
+  border-top: 7px solid green;
+}
+
+.controlPanel .boxsOrg {
+  border-top: 7px solid orange;
+}
+
+.controlPanel .boxsPrb {
+  border-top: 7px solid rgb(70, 1, 70);
+  color: rgb(70, 1, 70);
+}
+
+.controlPanel .boxsGreen>p,
+.controlPanel .boxsOrg>p,
+.controlPanel .boxsPrb>p {
+  font-size: 2rem;
+}
+
+/* ///////////////////////////////////////////////////// */
+
+.manage .form-control {
+  background-color: #7070703f;
+}
+
+.manage .btn {
+  background-color: #005779;
+  color: #fff;
+  font-size: .8rem;
+}
+
+.status div div {
+  border-bottom: 2px solid #DDD;
+}
+
+.bg-green {
+  background-color: rgba(0, 128, 0, 0.342);
+}
+
+.status .active {
+  color: #005779;
+  border-bottom: 2px solid #005779;
+}
+
+.tranaction .textSec {
+  background-color: #7070703f;
+}
+
+.tranaction .btnSuccess {
+  background-color: rgba(0, 128, 0, 0.342);
+}
+
+.products .btnOrder {
+  background-color: #005779;
+  color: #fff;
+  border: .1rem solid #005779;
+  padding: 0, 6rem;
+  border-radius: 10px;
+}
+
+.products .btnOrder a {
+  color: #fff;
+  font-size: .8rem;
+}
+
+.form-check-input:checked {
+  background-color: green;
+  border-color: green;
+}
+
+.form-switch .form-check-input,
+.form-switch .form-check-input {
+  width: 45px;
+  height: 24px;
+}
+
+.borderStyle {
+  border-top: 9px solid rgba(177, 174, 174, 0.226);
+}
+
+.borderLast {
+  border-bottom: 2px solid rgba(177, 174, 174, 0.226);
+}
+
+aside {
+  width: fit-content;
+  color: #fff;
+  position: fixed;
+  z-index: 3;
+  left: -190.953px;
+  top: 0;
+  padding-top: 15px;
+}
+
+aside nav .navbar-brand {
+  width: 20px;
+}
+
+aside img {
+  width: 100px;
+}
+
+.test {
+  margin-left: 150px
+}
+
+.toggleMyMange,
+.toggleMySet {
+  display: none;
+}
+
+nav.fontSize {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+
+  html {
+    font-size: 3px;
+  }
+
+  .controlPanel header a {
+    max-width: 30%
+  }
+
+  .controlPanel header i {
+    font-size: 5rem;
+    margin-left: auto
+  }
+
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  html {
+    font-size: 5px;
+
+  }
+
+  .box {
+    margin-bottom: 3rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}

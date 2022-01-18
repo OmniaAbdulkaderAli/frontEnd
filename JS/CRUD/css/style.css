@@ -1,0 +1,7 @@
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.699));
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+    box-sizing: content-box;
+}

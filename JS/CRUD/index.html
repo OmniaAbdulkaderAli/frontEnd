@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>TaskWeek9</title>
+</head>
+
+<body>
+<div class="container bg-light text-success py-3 mt-3 text-capitalize w-75  ">
+
+        
+            <div class=" mt-5">
+                <div class="mb-3">
+                    <label for="name" class="form-label">product name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="price" class="form-label">Price</label>
+                    <input type="number" class="form-control" id="price" required>
+                </div>
+                <div class="mb-3">
+                    <label for="q" class="form-label"> Quantity</label>
+                    <input type="number" class="form-control" id="Quantity" required>
+                </div>
+                <div class="mb-3">
+                    <label for="Description" class="form-label">Description</label>
+                    <textarea class="form-control" id="Description" rows="3" required>
+        
+                </textarea>
+                </div>
+                <button class="btn btn-success" id="mainBtn" onclick="addProduct()"> Add Product</button>
+                <button class="btn btn-warning ms-3" onclick="clearInputs()"> Reset</button>
+                <div id="err"></div>
+            </div>
+    
+            <table class="   bg-light  table">
+                <input class=" form-control my-3 w-50 m-auto" id="searchProduct" placeholder="Product search">
+                <thead id="tablehead">
+                </thead>
+                <tbody id="tablebody">
+                </tbody>
+            </table>
+        </div>
+
+
+
+
+   
+    
+       
+    
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/script.js"> </script>
+</body>
+
+</html>

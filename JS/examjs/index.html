@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/all.css">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Document</title>
+</head>
+
+<body>
+
+
+	<header class=" d-flex vh-100">
+		<nav class=" bg-warning ">
+			<div class=" inner h-100 p-3 d-flex flex-column justify-content-between">
+				<ul class=" text-capitalize list-unstyled ">
+					<li class="item1">
+						<a> now playing </a>
+					</li>
+					<li class="item2"> 
+						<a> popular </a>
+					</li>
+					<li class="item3"> 
+						<a> top rated</a>
+					</li>
+					<li class="item4">
+						<a> trending</a>
+					</li>
+					<li class="item5">
+						<a> upcoming </a>
+					</li>
+					<li class="item7">
+						<a> contact us </a>
+					</li>
+				</ul>
+
+
+
+				<div class="nav-social-item align-self-end ">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fas fa-globe"></i></a>
+					<div class="pt-3">
+						<span>Copyright Â© 2019 All Rights Reserved.</span>
+					</div>
+				</div>
+
+
+			</div>
+		</nav>
+
+
+
+
+		<div class="slider bg-light text-center d-flex py-5 flex-column justify-content-between align-items-center">
+
+			<div>
+
+				<img class=" w-50" src="./imgs/Screen Recording 2021-09-19 at 10.52.52 AM.png" alt="logo">
+
+			</div>
+
+
+			<div>
+				<i class="fa icon1 fa-2x fa-align-justify"></i>
+
+				<i class="fa icon fa-align-justify fa-times"></i>
+
+			</div>
+
+
+
+
+			<div class="strip-social-icon">
+				<div class="strip-lang">
+					<span>
+						<i class="fas fa-globe"></i>
+					</span>
+				</div>
+				<div class="strip-search">
+					<span>
+						<i class="fas fa-search"></i>
+					</span>
+				</div>
+				<div class="strip-share">
+					<span>
+						<i class="fas fa-share-alt"></i>
+					</span>
+				</div>
+			</div>
+
+		</div>
+	</header>
+
+	<section id="films " class="pt-5">
+
+		<div class="container w-75 text-white">
+			<div class="row">
+				<div class="col-md-6"><input id="allMovies" class="text-center mb-5 "
+						placeholder="get movies by word...">
+				</div>
+				<div class="col-md-6"><input class="text-center" id="word" placeholder="search...">
+				</div>
+
+			</div>
+
+			<div class="row movieInfo">
+
+
+
+
+			</div>
+		</div>
+
+
+
+
+	</section>
+
+
+
+	<section id="contact" class="container myM w-75 mx-auto my-5 ">
+		<h2 class="text-light my-5">ContacUs...</h2>
+		<div class="row ">
+			<div class="col-md-6">
+				<div class="form-group">
+					<input class="" id="name" value="" placeholder="Enter Your Name">
+
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+					<input class="" id="email" placeholder="Enter Email">
+
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+					<input class="" id="phone" placeholder="Enter phone">
+
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+					<input class="" id="age" placeholder="Enter Age">
+
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="form-group">
+					<input class="" type="password" id="password" placeholder="Enter Password">
+
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+					<input class="" type="password" id="rePassword" placeholder="Enter RePassword">
+
+				</div>
+			</div>
+
+
+		</div>
+		<div>
+			<h3 id="err"> </h3>
+		</div>
+		<button type="submit" id="submitBtn" class="  disabled btn btn-outline-danger">Submit</button>
+
+
+	</section>
+
+	<script src="./js/bootstrap.bundle.js"> </script>
+	<script src="./js/jquery-3.6.0.min.js"></script>
+	<script src="js/style.js"></script>
+	<script src="./js/auth.js"></script>
+	<script src="./js/script.js"></script>
+</body>
+
+</html>

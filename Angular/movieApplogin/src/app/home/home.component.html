@@ -1,0 +1,53 @@
+
+<div class="container py-5">
+    <div class="row">
+
+        <div class="col-md-4">
+
+
+            <input [(ngModel)]="term" class="form-control">
+
+            <div>
+                <div class="brd w-25 mb-3"></div>
+                <h1>Trending <br> Movies <br> To Watch Now</h1>
+                <div class="brd w-75 mt-3"></div>
+            </div>
+        </div>
+
+        <div class="col-md-2 mb-3" *ngFor="let movie of homeMovies | realSearch:term">
+            <div [routerLink]="['/showdetails',movie.id]">
+                <img class="img-fluid" [src]="imgPath+movie.poster_path">
+                <h2> {{movie.title | uppercase }} </h2>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <div class="row pt-5">
+
+        <div class="col-md-4">
+            <div>
+                <div class="brd w-25 mb-3"></div>
+                <h1>Trending <br> Tv <br> To Watch Now</h1>
+                <div class="brd w-75 mt-3"></div>
+            </div>
+        </div>
+
+        <div class="col-md-2 mb-3" *ngFor="let movie of homeTv">
+            <div>
+                <img class="img-fluid" [src]="imgPath+movie.poster_path">
+                <h2> {{movie.name}} </h2>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+
+
+
+

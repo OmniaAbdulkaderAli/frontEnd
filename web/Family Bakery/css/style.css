@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+header {
+    background: linear-gradient(rgb(44 34 34 / 11%) 100%, rgba(31, 28, 28, 0.562)100%), url(../images/drew-coffman-1872.jpg);
+    color: #fff;
+    text-align: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+header p {font-size: 1.2rem;}
+
+header nav {
+    padding-top: 20px;
+}
+
+header nav .logo {
+    float: left;
+    padding: 0;
+}
+
+header nav .logo img {
+    width: 50%;
+    height: 50%;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 10px 0 0;
+    cursor: pointer;
+}
+
+header h1 {
+    font-size: 4em;
+    margin: 0
+}
+
+header a {
+    display: inline-block;
+    text-decoration: none;
+    border: thin solid #fff;
+    color: #fff;
+    padding: 15px 35px;
+    border-radius: 5px;
+    transition: all 0.8s;
+}
+
+header a.active {
+    background-color: #8e7754;
+    border: thin solid#8e7754;
+}
+
+header a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+header .content {
+    margin-top: 20vh;
+    line-height: 1.5;
+}
+
+section.sec1{margin-top: 50px; line-height: 10px;}
+section .left{float: left; width: 50%;padding-right: 5%;}
+section .left img{width:90% ; height: 90&;}
+section .right p{color: #8b7a5b;}
+section .right{float: right; width: 50%; line-height: 2; padding-top: 5%;}
+section .right ul {list-style: none; color: #917f62;}
+
+section .right ul li i {color: #8e7853; border-radius: 100%; border:thin solid #9e8b6b88 ; margin:5px; width:40px ;height: 40px; text-align: center; line-height: 40px;}
+/* 
+/////////////////////////////////////////////////// */
+section.sec2{background-color: rgb(245, 243, 243); margin-top: 50px;}
+section.sec2 .right img {width: 90%; height: 90%;}
+
+section.sec2 .left{ line-height: 1.7; padding: 150px 20px;}
+section.sec2 .left p{color: #8e7853;}
+
+/* 
+/////////////////////////////////////////////////// */
+section.sec3 {text-align: center; margin-top: 50px; line-height: 1.5;} 
+section.sec3 .product {width: 33%; float: left; padding-right:2%; margin-top: 20px;}
+section.sec3 .product img{ width: 100%;}
+
+section.sec4 { background-color:rgb(245, 243, 243) ; line-heigh: 2; margin-top: 50px; }
+section.sec4 .left{padding-top: 100px;}
+section.sec4 ul {list-style: none;}
+section.sec4 ul li i {background-color: #8b7a5b; color: #fff; width: 40px; height: 40px; border-radius: 100% ;text-align: center; line-height: 40px; margin: 10px;} 
+
+/* 
+/////////////////////////////////////////////////// */
+
+section.sec5{padding-top: 50px; line-height: 2; background-color:#403d38; color: rgba(255, 255, 255, 0.678);}
+section.sec5 h3{color: #fff;}
+section.sec5 .part {float: left; width: 25%; padding: 0 1%; line-height: 2;}
+section.sec5 .part ul {list-style: none; padding: 0;}
+section.sec5 .part ul li {border-bottom: thin solid rgb(143, 139, 139, 0.315);}
+section.sec5 .part:nth-of-type(4) div{border-bottom: thin solid rgba(143, 139, 139, 0.315);}
+section.sec5 .part i{ margin-right:10px ;}
+
+/*/////////////////////////////////////////////////// */
+footer{background-color: #2d2b28; text-align: center; color: #fff; padding: 50px 0;}
+footer i {width: 40px; height: 40px ;border-radius: 100%; border-radius: thin solid #fff; color:red}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
