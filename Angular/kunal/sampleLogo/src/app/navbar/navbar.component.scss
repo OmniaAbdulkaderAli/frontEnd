@@ -1,0 +1,120 @@
+$groundColor: #F5F6F8;
+$mainColorOne: #7483F7;
+$mainColorTwo: #1ECAD7;
+.text-success{color: $mainColorOne!important;};
+
+.rounded-3{border-radius: 1.3rem!important}
+
+////////////////////////////////////////
+
+
+.navbar{ background-color: $groundColor!important;}
+.navbar-brand{color: $mainColorOne;}
+.form-select{width: 10%; border:none ;}
+.imgProfile{width: 2.4rem ;}
+.bg-mainColor{background-color: $mainColorOne; color: #fff;}
+.btn-success{background-color: $mainColorTwo; border-color: $mainColorTwo;}
+
+
+
+.notification{
+  position: relative;
+}
+
+
+  .notification2{
+    position: relative;
+
+  }
+
+.notification4{
+  position: relative;
+}
+.badge2{
+
+    position: absolute;
+    top: -10px;
+    right: 7px;
+    padding: .1rem .4rem;
+    border-radius: 50%;
+    background: #FFD18D;
+    color: white;
+  }
+
+
+.badge1{
+
+    position: absolute;
+    top: -10px;
+    right: -12px;
+    padding: .1rem .4rem;
+    border-radius: 50%;
+    background: #FFD18D;
+    color: white;
+  }
+.badge3{
+
+    position: absolute;
+    top: -8px;
+    right: -13px;
+    padding: .1rem .4rem;
+    border-radius: 50%;
+    background: #FFD18D;
+    color: white;
+  }
+
+.test{position:absolute; right: 10px ;}
+
+
+
+.dropdown button{background-color: #fff; border-radius: .9rem;  }
+
+
+.dropdown-menu.show {
+
+    top: 45px;
+    border-top:none
+}
+.dropdown  ul::before{
+  content: "";
+
+    position: absolute;
+    top: -33px;
+    left: 85px;
+    width: 0;
+    height: 0;
+    border: 18px solid #dc313100;
+    border-bottom: 15px solid #fff;
+  z-index: 444;}
+.dropdown  ul li button {background-color: $groundColor;  margin: 7px 5px 5px 0; }
+
+
+/* Extra small devices (portrait phones, less than 576px) No media query since this is the default if you use "mobile first" */
+
+/* Small devices (landscape phones, 576px and up) */ @media (max-width: 576px) {
+html{font-size: 10px!important; color: green !important;}
+
+
+
+} /* Medium devices (tablets, 768px and up) */ @media (max-width: 768px) {
+
+
+
+  html{font-size: 10px!important;}
+} /* Large devices (desktops, 992px and up) */ @media (max-width: 992px) {
+  .navbar-collapse{  width:10%; padding:0 0px}
+  .inner{width:100%!important; margin:0;border-radius: 0!important; margin-left: 0!important; display:flex; justify-content: space-around;}
+  .badge3{
+
+    position: absolute;
+    top: -3px;
+    right: -2px;
+    padding: .1rem .4rem;
+    border-radius: 50%;
+    background: #FFD18D;
+    color: white;
+  }
+
+
+} /* Extra large devices (large desktops, 1200px and up) */ @media (min-width: 1200px) {
+}

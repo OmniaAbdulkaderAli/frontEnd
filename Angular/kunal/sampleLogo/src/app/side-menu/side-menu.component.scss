@@ -1,0 +1,33 @@
+$groundColor: #F5F6F8;
+$mainColorOne: #7483F7;
+$mainColorTwo: #1ECAD7;
+$darkbg:#151E51;
+
+.content {width: fit-content;}
+.bg-secondary{background-color: $groundColor!important;}
+.btn-primary{background-color:$darkbg!important ; border-color: $darkbg!important; ;}
+.btn-success{background-color: $mainColorTwo ; color: #fff; border-color: $mainColorTwo;}
+button{text-transform: capitalize; margin: 2px 0;}
+.rounded-5{border-radius: .8rem;}
+.item{background-color: #E9EBEE ; border-radius: .7rem; padding-top: 2px; padding-bottom: 2px; margin: 10px 0 ;}
+.rounded-4{border-radius: 1.4rem;}
+
+.hide{display:none}
+.show{display: inline; margin: 0 10px;}
+
+/* Extra small devices (portrait phones, less than 576px) No media query since this is the default if you use "mobile first" */
+
+/* Small devices (landscape phones, 576px and up) */ @media (max-width: 576px) {
+
+
+
+
+
+} /* Medium devices (tablets, 768px and up) */ @media (max-width: 768px) {
+
+} /* Large devices (desktops, 992px and up) */ @media (max-width: 992px) {
+
+  .content {position: fixed; left: 0; background-color: #fff;}
+
+} /* Extra large devices (large desktops, 1200px and up) */ @media (min-width: 1200px) {
+}

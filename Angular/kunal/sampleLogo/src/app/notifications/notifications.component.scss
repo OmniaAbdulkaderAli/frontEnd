@@ -1,0 +1,16 @@
+.active{ border-bottom:  4px solid #151E51;}
+ a,  .clearColor{color: #7483F7;}
+.rounded-3 {border-radius:.9rem!important;}
+.border-btn{border:1px solid #151E51 ; border-radius: 20px;}
+
+
+.main::before{content: "";
+
+  position: absolute;
+  top: -33px;
+  right: 5px;
+  width: 0;
+  height: 0;
+  border: 18px solid #dc313100;
+  border-bottom: 15px solid #fff;
+z-index: 444;}

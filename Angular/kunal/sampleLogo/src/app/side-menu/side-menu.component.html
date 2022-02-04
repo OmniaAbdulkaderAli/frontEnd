@@ -1,0 +1,125 @@
+<header   class=" text-center slider bg-secondary pb-5 justify-content-center  d-flex ">
+
+  <div class="content">
+    <div class="w-100 d-flex px-3"> <i (click)="change()" [ngClass]="open ? next: previous"  class=" ms-auto"></i> </div>
+
+    <div class="p-3 d-flex flex-column justify-content-between">
+      <ul class=" list-unstyled ">
+        <li class="">
+          <button class=" w-100  py-2 btn btn-primary rounded-4 "> <i class="fas fa-barcode"></i> <span *ngIf="change" [ngClass]="open ? hide: show"> scan now </span></button>
+        </li>
+        <li class="active">
+          <button class=" py-2 btn rounded-5 w-100 btn-success d-flex justify-content-between align-items-center">
+            <div>
+              <i class="fas fa-home me-2 "></i> <span *ngIf="change" [ngClass]="open ? hide: show" >home</span>
+            </div>
+            <i *ngIf="change" [ngClass]="open ? hide: show" class=" ms-5 fas fa-chevron-right"></i>
+          </button>
+        </li>
+        <li class="item">
+          <button class=" py-2 rounded-5 w-100 btn d-flex justify-content-between align-items-center">
+            <div>
+              <i class="fas fa-home me-2 "></i> <span *ngIf="change" [ngClass]="open ? hide: show">menu 1  </span>
+            </div>
+
+            <div><i (click)="test()"  [class.hide]="open==true" [class.show]=" open==false"   [ngClass]="isActive ? arrowRight : arrowDown" ></i></div>
+
+          </button>
+          <ul *ngIf="showMe" class="list-unstyled m-2  ">
+             <li class="bg-white rounded-3 p-2 my-2 "> sub menu 1 </li>
+             <li class="bg-white rounded-3 p-2 my-2 "> sub menu 2  </li>
+             <li class="bg-white rounded-3 p-2 my-2 "> sub menu 3 </li>
+
+            </ul>
+        </li>
+        <li class="item">
+
+          <button class=" py-2  btn rounded-5 w-100  d-flex justify-content-lg-between  align-items-center">
+            <div>
+              <i class="fas fa-home me-2 "></i> <span *ngIf="change" [ngClass]="open ? hide: show" >menu 2</span>
+            </div>
+            <i *ngIf="change" [ngClass]="open ? hide: show" class=" ms-5 fas fa-chevron-right"></i>
+          </button>
+
+
+        </li>
+
+        <li class="item">
+          <button class=" py-2 btn rounded-5 w-100 btn d-flex justify-content-lg-between align-items-center">
+            <div>
+              <i class="fas fa-home me-2 "></i> <span *ngIf="change" [ngClass]="open ? hide: show" >menu 3</span>
+            </div>
+            <i *ngIf="change" [ngClass]="open ? hide: show" class=" ms-5 fas fa-chevron-right"></i>
+          </button>
+        </li>
+        <li class="item">
+          <button class=" py-2 btn rounded-5 w-100 btn d-flex justify-content-lg-between align-items-center">
+            <div>
+              <i class="fas fa-home me-2 "></i> <span *ngIf="change" [ngClass]="open ? hide: show" >menu 4</span>
+            </div>
+            <i *ngIf="change" [ngClass]="open ? hide: show" class=" ms-5 fas fa-chevron-right"></i>
+          </button>
+        </li>
+        <li class="item">
+          <button class=" py-2 btn rounded-5 w-100 btn d-flex justify-content-lg-between align-items-center">
+            <div>
+              <i class="fas fa-home me-2 "></i> <span *ngIf="change" [ngClass]="open ? hide: show" >menu 5</span>
+            </div>
+            <i *ngIf="change" [ngClass]="open ? hide: show" class=" ms-5 fas fa-chevron-right"></i>
+          </button>
+        </li>
+        <li class="item">
+          <button class=" py-2 btn rounded-5 w-100 btn d-flex justify-content-lg-between align-items-center">
+            <div>
+              <i class="fas fa-home me-2 "></i> <span *ngIf="change" [ngClass]="open ? hide: show" >menu 6</span>
+            </div>
+            <i *ngIf="change" [ngClass]="open ? hide: show" class=" ms-5 fas fa-chevron-right"></i>
+          </button>
+        </li>
+        <li class="item">
+          <button class=" py-2 btn rounded-5 w-100 btn d-flex justify-content-lg-between align-items-center">
+            <div>
+              <i class="fas fa-home me-2 "></i> <span *ngIf="change" [ngClass]="open ? hide: show" >menu 7</span>
+            </div>
+            <i *ngIf="change" [ngClass]="open ? hide: show" class=" ms-5 fas fa-chevron-right"></i>
+          </button>
+        </li>
+        <li class="item">
+          <button class=" py-2 btn rounded-5 w-100 btn d-flex justify-content-lg-between align-items-center">
+            <div>
+              <i class="fas fa-home me-2 "></i> <span *ngIf="change" [ngClass]="open ? hide: show" >menu 8</span>
+            </div>
+            <i *ngIf="change" [ngClass]="open ? hide: show" class=" ms-5 fas fa-chevron-right"></i>
+          </button>
+        </li>
+        <li class="item">
+          <button class=" py-2 btn rounded-5 w-100 btn d-flex justify-content-lg-between align-items-center">
+            <div>
+              <i class="fas fa-home me-2 "></i> <span *ngIf="change" [ngClass]="open ? hide: show" >menu 9</span>
+            </div>
+            <i *ngIf="change" [ngClass]="open ? hide: show" class=" ms-5 fas fa-chevron-right"></i>
+          </button>
+        </li>
+        <li class="item ">
+          <button class=" py-2 btn rounded-5 w-100 btn d-flex justify-content-lg-between align-items-center">
+            <div>
+              <i class="fas fa-home me-2 "></i> <span *ngIf="change" [ngClass]="open ? hide: show" >menu 10</span>
+            </div>
+            <i *ngIf="change" [ngClass]="open ? hide: show" class=" ms-5 fas fa-chevron-right"></i>
+          </button>
+        </li>
+
+      </ul>
+
+
+
+
+
+
+    </div>
+  </div>
+
+</header>
+
+
+
